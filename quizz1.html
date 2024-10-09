@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Agency Homepage</title>
+  </head>
+  <body class="d-flex flex-column h-100 bg-lightgray">
+    <header>
+      <nav class="navbar navbar-expand-lg py-4 bg-white shadow-sm">
+        <div class="container">
+          <div class="row align-items-center justify-content-between w-100">
+            <div class="col d-none d-lg-block">
+              <ul class="list-inline m-0">
+                <li class="list-inline-item">
+                  <a href="#" class="text-link-gray text-decoration-none">
+                    Buying
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-link-gray text-decoration-none">
+                    Selling
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-link-gray text-decoration-none">
+                    Agents & offices
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="text-link-gray text-decoration-none fw-bold"
+                  >
+                    Contact us
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col text-center">
+              <a href="index.html" class="logo-header">
+                <img src="/assets/logo.png" alt="" width="100%" />
+              </a>
+            </div>
+            <div
+              class="col text-end d-flex justify-content-end align-items-center gap-3 pe-0"
+            >
+              <div class="dropdown">
+                <a
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="/assets/svg/globe.svg" alt="" width="20" />
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end mt-3">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-header d-flex py-2"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="/assets/svg/burger.svg" alt="" class="me-1" />
+                  <img src="/assets/svg/user.svg" alt="" class="ms-1" />
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end mt-2">
+                  <li class="d-block d-lg-none">
+                    <a class="dropdown-item" href="#">Buying</a>
+                  </li>
+                  <li class="d-block d-lg-none">
+                    <a class="dropdown-item" href="#">Selling</a>
+                  </li>
+                  <li class="d-block d-lg-none">
+                    <a class="dropdown-item" href="#">Agents & offices</a>
+                  </li>
+                  <li class="d-block d-lg-none">
+                    <a class="dropdown-item" href="#">Contact us</a>
+                  </li>
+                  <li class="d-block d-lg-none">
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Sign in</a></li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+      <div class="quizz">
+        <div class="tip">This will help us understand you property better.</div>
+
+        <div class="container">
+          <div
+            class="d-flex flex-column-reverse flex-lg-row gap-5 justify-content-between align-items-center py-5"
+          >
+            <div class="w-100 w-lg-50 text-white pe-5">
+              <!-- <div class="w-100 w-lg-75">
+                <h1 class="text-shadow display-3 fw-bold">
+                  We'd love to <br />
+                  hear from you
+                </h1>
+                <p class="text-shadow lead">
+                  Please fill out the form to contact us with any questions or
+                  comments you might have and someone will get back to you as
+                  soon as possible. You can also search for an agent or office
+                  <a href="#" class="text-white fw-bolder">here</a>
+                </p>
+              </div> -->
+            </div>
+            <div class="w-100 w-lg-50">
+              <div
+                class="quizz-wrapper bg-white p-4 rounded d-flex flex-column align-items-center gap-4 position-relative"
+              >
+                <div class="progress-wrapper">
+                  <div class="progress" style="width: 25%"></div>
+                </div>
+                <h3 class="m-0 mt-3">Is this the correct address?</h3>
+                <div class="map">
+                  <img
+                    class="img-fluid rounded"
+                    src="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/url-https%3A%2F%2Fhl-production-assets.s3.amazonaws.com%2Fmaps%2Fhome-marker.png(-80.566029,40.966658)/-80.566029,40.966658,14/550x300/?access_token=pk.eyJ1IjoiaG9tZWxpZ2h0IiwiYSI6ImNqNmZka24yNDJtd3QzMm8xYm1hbWFhcnIifQ.BT1EY0MP0qndOTsWsvv8FA&attribution=false&logo=false"
+                    alt=""
+                  />
+                </div>
+                <button class="btn btn-blue w-50">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto pt-5 pb-4 bg-white border-top">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between pb-4 gap-3"
+        >
+          <div class="d-flex flex-column">
+            <a href="index.html">
+              <img src="/assets/logo.png" alt="" width="250" />
+            </a>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a
+              href="index.html"
+              class="text-link-gray text-decoration-none fw-bold"
+            >
+              Home
+            </a>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a
+              href="index.html"
+              class="text-link-gray text-decoration-none fw-bold"
+            >
+              Properties
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Buy
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Sell
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Rent
+            </a>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a
+              href="index.html"
+              class="text-link-gray text-decoration-none fw-bold"
+              >Agents & offices</a
+            >
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Become an agent
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Find an agent
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Find an office
+            </a>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a
+              href="index.html"
+              class="text-link-gray text-decoration-none fw-bold"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between gap-3 pt-3 pb-1"
+        >
+          <div>&copy; 2024</div>
+          <div>
+            <ul class="list-inline d-flex d-md-block flex-column gap-2">
+              <li class="list-inline-item">
+                <a href="#" class="text-link-gray text-decoration-none">
+                  Privacy policy
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-link-gray text-decoration-none">
+                  Legal
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-link-gray text-decoration-none">
+                  Access personal data
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-link-gray text-decoration-none">
+                  Data protection statement
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

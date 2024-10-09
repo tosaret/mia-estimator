@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Agency Homepage</title>
+  </head>
+  <body class="d-flex flex-column h-100 bg-lightgray">
+    <header>
+      <nav class="navbar navbar-expand-lg py-4 bg-white shadow-sm">
+        <div class="container">
+          <div class="row align-items-center justify-content-between w-100">
+            <div class="col d-none d-lg-block">
+              <ul class="list-inline m-0">
+                <li class="list-inline-item">
+                  <a href="#" class="text-link-gray text-decoration-none">
+                    Buying
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-link-gray text-decoration-none">
+                    Selling
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-link-gray text-decoration-none">
+                    Agents & offices
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="#"
+                    class="text-link-gray text-decoration-none fw-bold"
+                  >
+                    Contact us
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col text-center">
+              <a href="index.html" class="logo-header">
+                <img src="/assets/logo.png" alt="" width="100%" />
+              </a>
+            </div>
+            <div
+              class="col text-end d-flex justify-content-end align-items-center gap-3 pe-0"
+            >
+              <div class="dropdown">
+                <a
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="/assets/svg/globe.svg" alt="" width="20" />
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end mt-3">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Deutsch</a></li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <button
+                  class="btn btn-header d-flex py-2"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="/assets/svg/burger.svg" alt="" class="me-1" />
+                  <img src="/assets/svg/user.svg" alt="" class="ms-1" />
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end mt-2">
+                  <li class="d-block d-lg-none">
+                    <a class="dropdown-item" href="#">Buying</a>
+                  </li>
+                  <li class="d-block d-lg-none">
+                    <a class="dropdown-item" href="#">Selling</a>
+                  </li>
+                  <li class="d-block d-lg-none">
+                    <a class="dropdown-item" href="#">Agents & offices</a>
+                  </li>
+                  <li class="d-block d-lg-none">
+                    <a class="dropdown-item" href="#">Contact us</a>
+                  </li>
+                  <li class="d-block d-lg-none">
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Sign in</a></li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-shrink-0">
+      <div
+        class="hero-bg d-flex align-items-center py-5 text-white text-center"
+      >
+        <div class="container">
+          <h1 class="display-4 fw-bold text-shadow">
+            How much is my house worth?
+          </h1>
+          <p class="lead fw-normal text-shadow">
+            Get a real-world value estimate in less than 2 minutes.
+          </p>
+          <div
+            class="d-inline-flex bg-white px-4 py-3 rounded bg-opacity-75 search-form"
+          >
+            <form
+              class="d-flex flex-column flex-md-row align-items-center gap-2 w-100"
+              role="search"
+            >
+              <div class="input-group">
+                <span class="input-group-text px-3">
+                  <svg
+                    width="24px"
+                    height="24px"
+                    viewBox="0 0 22 23"
+                    class="search-icon"
+                    fill="#104d9a"
+                  >
+                    <path
+                      d="M21.699167,19.7851568 C21.8996876,19.9856773 21.9999475,20.2291659 21.9999475,20.5156238 C21.9999475,20.8020816 21.8996876,21.0455702 21.699167,21.2460908 L20.4960449,22.4492129 C20.2955243,22.6497335 20.0520357,22.7499934 19.7655779,22.7499934 C19.47912,22.7499934 19.2356314,22.6497335 19.0351109,22.4492129 L14.7382461,18.1523482 C14.5377255,17.9518276 14.4374656,17.708339 14.4374656,17.4218811 L14.4374656,16.7343828 C12.833303,17.9947962 10.9999738,18.6250033 8.93747869,18.6250033 C7.30467008,18.6250033 5.80792908,18.2239628 4.44725502,17.4218811 C3.08658096,16.6197995 2.00520377,15.5384223 1.20312213,14.1777483 C0.401040492,12.8170742 0,11.3203332 0,9.68752459 C0,8.05471598 0.401040492,6.55797498 1.20312213,5.19730092 C2.00520377,3.83662686 3.08658096,2.75524967 4.44725502,1.95316803 C5.80792908,1.15108639 7.30467008,0.750045896 8.93747869,0.750045896 C10.5702873,0.750045896 12.0670283,1.15108639 13.4277024,1.95316803 C14.7883764,2.75524967 15.8697536,3.83662686 16.6718353,5.19730092 C17.4739169,6.55797498 17.8749574,8.05471598 17.8749574,9.68752459 C17.8749574,11.7500197 17.2447503,13.5833489 15.9843369,15.1875115 L16.6718353,15.1875115 C16.9582931,15.1875115 17.2017817,15.2877714 17.4023023,15.488292 L21.699167,19.7851568 Z M8.93747869,15.1875115 C9.94008025,15.1875115 10.8639062,14.9440223 11.7089565,14.4570445 C12.5540067,13.9700667 13.2200208,13.3040526 13.7069986,12.4590024 C14.1939764,11.6139521 14.4374656,10.6901261 14.4374656,9.68752459 C14.4374656,8.68492303 14.1939764,7.76109711 13.7069986,6.91604682 C13.2200208,6.07099653 12.5540067,5.4049825 11.7089565,4.91800471 C10.8639062,4.43102692 9.94008025,4.1875377 8.93747869,4.1875377 C7.93487713,4.1875377 7.01105121,4.43102692 6.16600092,4.91800471 C5.32095064,5.4049825 4.6549366,6.07099653 4.16795881,6.91604682 C3.68098103,7.76109711 3.4374918,8.68492303 3.4374918,9.68752459 C3.4374918,10.6901261 3.68098103,11.6139521 4.16795881,12.4590024 C4.6549366,13.3040526 5.32095064,13.9700667 6.16600092,14.4570445 C7.01105121,14.9440223 7.93487713,15.1875115 8.93747869,15.1875115 Z"
+                    ></path>
+                  </svg>
+                </span>
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Enter property address"
+                  aria-label="Enter property address"
+                />
+              </div>
+              <button class="btn btn-blue fw-bolder" type="submit">
+                Get estimation
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="my-5">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-11 col-xl-10">
+                <h2 class="mb-5 fw-bolder text-center">
+                  Home Value Estimator FAQs
+                </h2>
+              </div>
+              <div class="col-11 col-xl-10">
+                <div class="accordion accordion-flush" id="faqAccount">
+                  <div
+                    class="accordion-item bg-transparent border-top border-bottom py-2"
+                  >
+                    <h2 class="accordion-header" id="faqAccountHeading1">
+                      <button
+                        class="accordion-button collapsed bg-transparent fw-bold shadow-none text-link-gray"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse1"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse1"
+                      >
+                        What is Home Value Estimator?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse1"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading1"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          You'll be asked seven simple but specific questions
+                          about your home to ensure we have the most up-to-date
+                          data about the property. By providing these details,
+                          you’ll see a much more accurate valuation of your
+                          home. Along with an estimated ballpark value,
+                          HomeLight’s Home Value Estimator provides additional
+                          selling suggestions and options. Sometimes, you’ll
+                          even see a 90% - 95% offer come in on your home’s
+                          market value before you even consider listing it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent border-bottom py-2">
+                    <h2 class="accordion-header" id="faqAccountHeading2">
+                      <button
+                        class="accordion-button collapsed bg-transparent fw-bold shadow-none text-link-gray"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse2"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse2"
+                      >
+                        How do I calculate the value of my house?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse2"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading2"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          You'll be asked seven simple but specific questions
+                          about your home to ensure we have the most up-to-date
+                          data about the property. By providing these details,
+                          you’ll see a much more accurate valuation of your
+                          home. Along with an estimated ballpark value,
+                          HomeLight’s Home Value Estimator provides additional
+                          selling suggestions and options. Sometimes, you’ll
+                          even see a 90% - 95% offer come in on your home’s
+                          market value before you even consider listing it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent border-bottom py-2">
+                    <h2 class="accordion-header" id="faqAccountHeading3">
+                      <button
+                        class="accordion-button collapsed bg-transparent fw-bold shadow-none text-link-gray"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse3"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse3"
+                      >
+                        How to increase home value?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse3"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading3"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          You'll be asked seven simple but specific questions
+                          about your home to ensure we have the most up-to-date
+                          data about the property. By providing these details,
+                          you’ll see a much more accurate valuation of your
+                          home. Along with an estimated ballpark value,
+                          HomeLight’s Home Value Estimator provides additional
+                          selling suggestions and options. Sometimes, you’ll
+                          even see a 90% - 95% offer come in on your home’s
+                          market value before you even consider listing it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent border-bottom py-2">
+                    <h2 class="accordion-header" id="faqAccountHeading4">
+                      <button
+                        class="accordion-button collapsed bg-transparent fw-bold shadow-none text-link-gray"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse4"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse4"
+                      >
+                        How do free online home value estimators work?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse4"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading4"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          You'll be asked seven simple but specific questions
+                          about your home to ensure we have the most up-to-date
+                          data about the property. By providing these details,
+                          you’ll see a much more accurate valuation of your
+                          home. Along with an estimated ballpark value,
+                          HomeLight’s Home Value Estimator provides additional
+                          selling suggestions and options. Sometimes, you’ll
+                          even see a 90% - 95% offer come in on your home’s
+                          market value before you even consider listing it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent border-bottom py-2">
+                    <h2 class="accordion-header" id="faqAccountHeading5">
+                      <button
+                        class="accordion-button collapsed bg-transparent fw-bold shadow-none text-link-gray"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse5"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse5"
+                      >
+                        What is home value?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse5"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading5"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          You'll be asked seven simple but specific questions
+                          about your home to ensure we have the most up-to-date
+                          data about the property. By providing these details,
+                          you’ll see a much more accurate valuation of your
+                          home. Along with an estimated ballpark value,
+                          HomeLight’s Home Value Estimator provides additional
+                          selling suggestions and options. Sometimes, you’ll
+                          even see a 90% - 95% offer come in on your home’s
+                          market value before you even consider listing it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent border-bottom py-2">
+                    <h2 class="accordion-header" id="faqAccountHeading6">
+                      <button
+                        class="accordion-button collapsed bg-transparent fw-bold shadow-none text-link-gray"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse6"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse6"
+                      >
+                        How often should I check my home's value?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse6"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading6"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          You'll be asked seven simple but specific questions
+                          about your home to ensure we have the most up-to-date
+                          data about the property. By providing these details,
+                          you’ll see a much more accurate valuation of your
+                          home. Along with an estimated ballpark value,
+                          HomeLight’s Home Value Estimator provides additional
+                          selling suggestions and options. Sometimes, you’ll
+                          even see a 90% - 95% offer come in on your home’s
+                          market value before you even consider listing it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item bg-transparent py-2">
+                    <h2 class="accordion-header" id="faqAccountHeading7">
+                      <button
+                        class="accordion-button collapsed bg-transparent fw-bold shadow-none text-link-gray"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqAccountCollapse7"
+                        aria-expanded="false"
+                        aria-controls="faqAccountCollapse7"
+                      >
+                        What’s next after I receive my estimated home value?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqAccountCollapse7"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="faqAccountHeading7"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          You'll be asked seven simple but specific questions
+                          about your home to ensure we have the most up-to-date
+                          data about the property. By providing these details,
+                          you’ll see a much more accurate valuation of your
+                          home. Along with an estimated ballpark value,
+                          HomeLight’s Home Value Estimator provides additional
+                          selling suggestions and options. Sometimes, you’ll
+                          even see a 90% - 95% offer come in on your home’s
+                          market value before you even consider listing it.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer mt-auto pt-5 pb-4 bg-white border-top">
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between pb-4 gap-3"
+        >
+          <div class="d-flex flex-column">
+            <a href="index.html">
+              <img src="/assets/logo.png" alt="" width="250" />
+            </a>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a
+              href="index.html"
+              class="text-link-gray text-decoration-none fw-bold"
+            >
+              Home
+            </a>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a
+              href="index.html"
+              class="text-link-gray text-decoration-none fw-bold"
+            >
+              Properties
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Buy
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Sell
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Rent
+            </a>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a
+              href="index.html"
+              class="text-link-gray text-decoration-none fw-bold"
+              >Agents & offices</a
+            >
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Become an agent
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Find an agent
+            </a>
+            <a href="index.html" class="text-link-gray text-decoration-none">
+              Find an office
+            </a>
+          </div>
+          <div class="d-flex flex-column gap-3">
+            <a
+              href="index.html"
+              class="text-link-gray text-decoration-none fw-bold"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+
+        <hr />
+
+        <div
+          class="d-flex flex-column flex-md-row justify-content-between gap-3 pt-3 pb-1"
+        >
+          <div>&copy; 2024</div>
+          <div>
+            <ul class="list-inline d-flex d-md-block flex-column gap-2">
+              <li class="list-inline-item">
+                <a href="#" class="text-link-gray text-decoration-none">
+                  Privacy policy
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-link-gray text-decoration-none">
+                  Legal
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-link-gray text-decoration-none">
+                  Access personal data
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-link-gray text-decoration-none">
+                  Data protection statement
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
