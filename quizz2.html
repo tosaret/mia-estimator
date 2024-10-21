@@ -109,14 +109,12 @@
 
     <main class="flex-shrink-0">
       <div class="quizz">
-        <div class="tip">This will help us understand you property better.</div>
-
         <div class="container">
           <div
-            class="d-flex flex-column-reverse flex-lg-row gap-5 justify-content-between align-items-center py-5"
+            class="d-flex flex-column flex-lg-row gap-5 justify-content-between align-items-center py-5"
           >
-            <div class="w-100 w-lg-50 text-white pe-5">
-              <!-- <div class="w-100 w-lg-75">
+            <div class="w-100 w-lg-50 text-white pe-md-5">
+              <div class="w-100 w-lg-75 text-justify text-md-start">
                 <h1 class="text-shadow display-3 fw-bold">
                   We'd love to <br />
                   hear from you
@@ -127,14 +125,24 @@
                   soon as possible. You can also search for an agent or office
                   <a href="#" class="text-white fw-bolder">here</a>
                 </p>
-              </div> -->
+              </div>
             </div>
             <div class="w-100 w-lg-50">
               <div
                 class="quizz-wrapper bg-white p-4 rounded d-flex flex-column align-items-center gap-4 position-relative"
               >
-                <div class="progress-wrapper">
-                  <div class="progress" style="width: 90%"></div>
+                <div
+                  class="progress position-absolute top-0 w-100"
+                  style="height: 4px; border-radius: 4px 4px 0 0"
+                >
+                  <div
+                    class="progress-bar bg-danger"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
                 </div>
                 <h3 class="m-0 mt-3">Where should we send your estimate?</h3>
                 <form class="w-100 mx-5 my-2">
@@ -178,7 +186,7 @@
                     eligible agents or investors as part of your request.
                   </div>
 
-                  <button type="submit" class="btn btn-blue w-100 mt-4">
+                  <button type="submit" class="btn btn-primary w-100 mt-4">
                     Submit
                   </button>
                 </form>
@@ -186,6 +194,8 @@
             </div>
           </div>
         </div>
+
+        <div class="tip">This will help us understand you property better.</div>
       </div>
     </main>
 

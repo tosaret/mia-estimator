@@ -20,12 +20,13 @@ a {
   background-color: rgba(222, 40, 56, 0.08);
 }
 
-.btn-blue {
+.btn-primary {
   background: #104d9a;
+  border-color: #104d9a;
   color: #ffffff;
 }
-.btn-blue:hover,
-.btn-blue:focus {
+.btn-primary:hover,
+.btn-primary:focus {
   border-color: #104d9a;
   background-color: #ffffff;
   color: #104d9a;
@@ -48,6 +49,10 @@ a {
 
 .text-shadow {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .logo-header {
@@ -162,21 +167,18 @@ a {
   padding: 15px 15px 15px 50px;
   border-radius: 6px;
 }
+@media (max-width: 1024px) {
+  .quizz {
+    display: block;
+  }
+  .quizz .tip {
+    position: inherit;
+    left: 0;
+    top: -30px;
+    margin: 30px auto 0;
+    max-width: 320px;
+  }
+}
 .quizz-wrapper {
   min-height: 350px;
-}
-.quizz .progress-wrapper {
-  background-color: #eee;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  border-radius: 4px 4px 0 0;
-  overflow: hidden;
-}
-.quizz .progress {
-  height: 4px;
-  background-color: #de2838;
-  border-radius: 0;
 }
